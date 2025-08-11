@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancing HTML5 Content & Mastering Forms</title>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Content & Forms</h1>
+    <nav>
+      <ul>
+        <li><a href="#content-showcase">Content Showcase</a></li>
+        <li><a href="#pricing-table">Pricing Table</a></li>
+        <li><a href="#media-lab">Media Lab</a></li>
+        <li><a href="#signup-form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="content-showcase">
+      <h2>Content Showcase</h2>
+      <h3>Course Modules (Ordered List)</h3>
+      <ol>
+        <li>Semantic Structure</li>
+        <li>Accessible Media</li>
+        <li>Data Presentation using tables</li>
+        <li>HTML5 Forms & Validation</li>
+      </ol>
+
+      <h3>Key Terms (Description List)</h3>
+      <dl>
+        <dt>ARIA</dt>
+        <dd>Attributes to enhance accessibility.</dd>
+        <dt>Constraint Validation API</dt>
+        <dd>Native browser rules for inputs.</dd>
+        <dt>Fieldset &amp; Legend</dt>
+        <dd>Group related controls for accessibility.</dd>
+      </dl>
+
+      <h3>Checklist (Unordered List)</h3>
+      <ul>
+        <li>Use labels bound to inputs</li>
+        <li>Provide help text</li>
+        <li>Prefer semantic tags</li>
+        <li>Use native HTML before JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="pricing-table">
+      <h2>Pricing Table</h2>
+      <table border="1">
+        <caption>Plans for the "Web Starter" course</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Modules</th>
+            <th>Support</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>8</td>
+            <td>Email</td>
+            <td>49</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>16</td>
+            <td>Email + Forum</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Ultimate</td>
+            <td>24</td>
+            <td>Priority + Live</td>
+            <td>199</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">All plans include lifetime updates.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="media-lab">
+      <h2>Media Lab</h2>
+      <figure>
+        <img src="https://images.pexels.com/photos/7429193/pexels-photo-7429193.jpeg" alt="The Three Tree" width="200">
+        <figcaption>The Three tree</figcaption>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="https://t.me/christian_music_english/242" type="audio/ogg">
+        </audio>
+        <figcaption>Sample audio</figcaption>
+      </figure>
+      <figure>
+        <video controls width="320">
+          <source src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Pexels_Videos_2278095.mp4" type="video/mp4">
+        </video>
+        <figcaption>Sample video</figcaption>
+      </figure>
+    </section>
+
+    <section id="signup-form">
+      <h2>Enroll Now — HTML5 Workshop</h2>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First name*</label>
+          <input id="fname" name="fname" type="text" required>
+          <label for="lname">Last name*</label>
+          <input id="lname" name="lname" type="text" required>
+          <label for="dob">Date of birth*</label>
+          <input id="dob" name="dob" type="date" required>
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" required>
+          <label for="tel">Phone*</label>
+          <input id="tel" name="tel" type="tel" required pattern="^\+?[0-9][0-9\-\s]{7,}$">
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Security</legend>
+          <label for="username">Username*</label>
+          <input id="username" name="username" type="text" required>
+          <label for="password">Password*</label>
+          <input id="password" name="password" type="password" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="track">Learning Track</label>
+          <select id="track" name="track" required>
+            <option value="">Select…</option>
+            <option>HTML & CSS</option>
+            <option>Accessibility</option>
+          </select>
+          <label>Session Format</label>
+          <input type="radio" name="format" value="live" required> Live
+          <input type="radio" name="format" value="self"> Self-paced
+          <label><input type="checkbox" name="notif" value="email" checked> Email</label>
+          <label><input type="checkbox" name="notif" value="sms"> SMS</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Policies</legend>
+          <label><input type="checkbox" required> I agree to the Terms & Conditions</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Workshop Demo</p>
+  </footer>
+</body>
+</html>
